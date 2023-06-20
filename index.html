@@ -39,6 +39,15 @@
         list-style:none;
         padding:0px 20px;
       }
+      nav ul li a{
+        text-decoration:none;
+        color:white;
+        
+      }
+      nav ul li a:hover{
+        color:rgb(149, 8, 8);
+        font-size:1.04rem;
+      }
 
       .left{
         font-size:1.5rem;
@@ -48,13 +57,13 @@
         display:flex;
         justify-content:space-around;
        
-        margin:80px 0;
+        margin:100px 0;
       }
       .firstSection > div{ 
         width:30%;
       }
       .leftSection{
-        margin:30px;
+        /* margin:30px; */
         font-size:3rem;
       }
 
@@ -65,6 +74,32 @@
       .purple{
         color:blue;
       }
+
+      #element{
+        color:rgb(170, 107, 228);
+      }
+
+      .secondSection{
+        max-width:80%;
+        margin:auto;
+        padding:10px;
+        /* padding:0px 20px; */
+        
+      }
+      main hr{
+          border:0;
+          background:rgb(104, 102, 102);
+          height:1.2px;
+        }
+
+      .secondSection h1{
+        font-size:1.9rem;
+        font-style:italic;
+        font-weight:normal;
+        color:rgb(180, 77, 77);
+
+
+      }
     </style>
   </head>
   <body>
@@ -73,10 +108,10 @@
         <div class="left">Sanjana's Portfolio</div>
         <div class="right">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact Me</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Me</a></li>
             </ul>
         </div>
       </nav>
@@ -85,12 +120,26 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">Hi, My name is <span class="purple">Sanjana</span> 
-                <div>and I am a web Developer!</div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                
             </div>
             <div class="rightSection">
                 <img src="dp.png" alt="">
             </div>
         </section>
+        <hr>
+        <section class="secondSection">
+          <h1>Past Experience</h1>
+        </section>
     </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web developer', 'Student','Blogger','Video Editor'],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
