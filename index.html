@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      nav{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        height:100px;
+        background-color:rgb(46, 134, 216);
+
+      }
+      nav ul{
+        display:flex;
+        justify-content:center;
+       
+      }
+
+      nav ul li{
+        list-style:none;
+        padding:0px 20px;
+      }
+
+      .left{
+        font-size:1.5rem;
+      }
+
+      .firstSection{
+        display:flex;
+        justify-content:space-around;
+       
+        margin:80px 0;
+      }
+      .firstSection > div{ 
+        width:30%;
+      }
+      .leftSection{
+        margin:30px;
+        font-size:3rem;
+      }
+
+      .rightSection img{
+        width:80%;
+      }
+
+      .purple{
+        color:blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sanjana's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Me</li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Sanjana</span> 
+                <div>and I am a web Developer!</div>
+            </div>
+            <div class="rightSection">
+                <img src="dp.png" alt="">
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
